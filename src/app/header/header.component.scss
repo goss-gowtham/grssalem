@@ -1,0 +1,26 @@
+.Border-Top {
+  border-top-width: 1px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #84c223, #149a39);
+}
+.Border-Top:after { top: 0; }
+.Border {
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  height: 0.3em;
+  border: solid 0 #84c223;
+}
+
+.logo {
+  color: #149a39;
+}
+
+.mat-icon {
+  color: #149a39;
+}
+
+.mat-toolbar {
+  background: #d8effd;
+}
