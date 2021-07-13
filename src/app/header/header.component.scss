@@ -1,4 +1,12 @@
-.Border-Top {
+.logo {
+  color: #149a39;
+}
+
+.mat-toolbar {
+  background: #d8effd;
+}
+
+.Border-Top,.Border-bottom  {
   border-top-width: 1px;
   width: 100%;
   height: 1px;
@@ -15,14 +23,6 @@
   border: solid 0 #84c223;
 }
 
-.logo {
-  color: #149a39;
-}
-
-.mat-icon {
-  color: #149a39;
-}
-
-.mat-toolbar {
-  background: #d8effd;
+.Border-bottom:after {
+  bottom: 0;
 }
