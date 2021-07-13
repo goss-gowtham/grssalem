@@ -4,6 +4,7 @@ import { AboutComponent } from './core/about/about.component';
 import { ContactComponent } from './core/contact/contact.component';
 import { HomeComponent } from './core/home/home.component';
 import { ServicesComponent } from './core/services/services.component';
+import { ErrorComponent } from './error/error.component';
 
 
 const routes: Routes = [{
@@ -22,10 +23,17 @@ const routes: Routes = [{
   path: '',
   redirectTo: '/home',
   pathMatch: 'full',
+}, {
+  path: '**',
+  component: ErrorComponent
 }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload',
+    useHash: true,
+    scrollPositionRestoration: 'enabled',
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

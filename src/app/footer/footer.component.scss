@@ -1,4 +1,3 @@
-
 .footer-bar {
   background: #d8effd;
 }
@@ -8,7 +7,9 @@
   height: 1px;
   background: linear-gradient(90deg, #84c223, #149a39);
 }
-.Border-bottom:after { bottom: 0; }
+.Border-bottom:after {
+  bottom: 0;
+}
 .Border {
   display: block;
   width: 100%;
@@ -17,13 +18,19 @@
   border: solid 0 #84c223;
 }
 
-.credits {
+a {
   text-decoration: none !important;
   color: #149a39 !important;
 }
 
 footer {
-  position:relative;
+  position: relative;
   width: 100%;
   bottom: 0;
+}
+
+.mat-icon {
+  padding-left: 5px;
+  margin-top: 4px;
+  font-size: 14px;
 }

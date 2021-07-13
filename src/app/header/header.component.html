@@ -1,16 +1,28 @@
 <div class="Border Border-Top"></div>
 <mat-toolbar class="d-flex justify-content-between shadow-lg">
-  <span class="logo" routerLink="/home">Green Resource Solutions</span>
+  <span class="logo" style="cursor: pointer" routerLink="/home"
+    >Green Resource Solutions</span
+  >
   <div>
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-      <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >menu</mat-icon
+      >
     </button>
     <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
       <button mat-menu-item routerLink="/about">
         <mat-icon>feed</mat-icon>
         <span>About</span>
       </button>
-      <button mat-menu-item routerLink="/services">
+      <button mat-menu-item routerLink="/services" disabled>
         <mat-icon>water_drop</mat-icon>
         <span>Services</span>
       </button>

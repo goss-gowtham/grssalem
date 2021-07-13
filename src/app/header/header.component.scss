@@ -4,7 +4,9 @@
   height: 1px;
   background: linear-gradient(90deg, #84c223, #149a39);
 }
-.Border-Top:after { top: 0; }
+.Border-Top:after {
+  top: 0;
+}
 .Border {
   display: block;
   width: 100%;
