@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Open+Sans');
+
 html,
 body {
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .solution_cards_box .solution_card {
@@ -252,4 +253,16 @@ h1:after {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
+}
+
+
+.invite-text {
+  font-family: 'Jim Nightshade', cursive;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
