@@ -5,6 +5,7 @@ import { ContactComponent } from './core/contact/contact.component';
 import { HomeComponent } from './core/home/home.component';
 import { ServicesComponent } from './core/services/services.component';
 import { ErrorComponent } from './error/error.component';
+import { UnderdevComponent } from './underdev/underdev.component';
 
 
 const routes: Routes = [{
@@ -20,8 +21,11 @@ const routes: Routes = [{
   path: 'contact',
   component: ContactComponent
 }, {
+  path:'dev',
+  component: UnderdevComponent
+}, {
   path: '',
-  redirectTo: '/home',
+  redirectTo: '/dev',
   pathMatch: 'full',
 }, {
   path: '**',

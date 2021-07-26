@@ -16,6 +16,7 @@ import { AboutComponent } from './core/about/about.component';
 import { ContactComponent } from './core/contact/contact.component';
 import { ServicesComponent } from './core/services/services.component';
 import { ErrorComponent } from './error/error.component';
+import { UnderdevComponent } from './underdev/underdev.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ErrorComponent } from './error/error.component';
     AboutComponent,
     ContactComponent,
     ServicesComponent,
-    ErrorComponent
+    ErrorComponent,
+    UnderdevComponent
   ],
   imports: [
     BrowserModule,

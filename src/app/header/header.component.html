@@ -1,6 +1,6 @@
 <div class="Border Border-Top"></div>
 <mat-toolbar class="d-flex justify-content-between shadow-lg">
-  <span class="logo" style="cursor: pointer" routerLink="/home"
+  <span class="logo" style="cursor: pointer" routerLink="/dev" disabled
     >Green Resource Solutions</span
   >
   <div>
@@ -14,11 +14,11 @@
       >
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/">
+      <button mat-menu-item routerLink="/" disabled>
         <mat-icon>home</mat-icon>
         <span>Home</span>
       </button>
-      <button mat-menu-item routerLink="/about">
+      <button mat-menu-item routerLink="/about" disabled>
         <mat-icon>feed</mat-icon>
         <span>About</span>
       </button>
@@ -26,7 +26,7 @@
         <mat-icon>water_drop</mat-icon>
         <span>Services</span>
       </button>
-      <button mat-menu-item routerLink="/contact">
+      <button mat-menu-item routerLink="/contact" disabled>
         <mat-icon>send</mat-icon>
         <span>Contact</span>
       </button>
