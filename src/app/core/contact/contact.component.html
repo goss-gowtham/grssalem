@@ -2,6 +2,21 @@
   <div class="text-center">
     <h1 class="mt-5 half-underline">Contact us</h1>
   </div>
+  <div class="row">
+    <ng-container *ngFor="let contact of contactContent">
+      <div class="col-sm-4 px-4 my-3">
+        <div class="card shadow border-light">
+          <div class="card-body">
+            <h5 class="card-title">{{contact?.title}}</h5>
+            <p class="card-text">{{contact?.content}}</p>
+            <div class="text-center">
+              <button mat-raised-button (click)="openDialog()">{{contact?.buttonName}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
   <div class="row my-4">
     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12 my-2">
       <div class="row mx-auto">

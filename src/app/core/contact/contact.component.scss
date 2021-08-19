@@ -21,3 +21,11 @@ a {
   color: inherit;
 }
 
+.card {
+  border-radius: 6px;
+  border-top: 4px solid #60D69A !important;
+}
+.mat-dialog-content {
+  max-height: initial;
+  overflow: hidden;
+}

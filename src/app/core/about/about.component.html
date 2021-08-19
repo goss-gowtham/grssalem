@@ -2,29 +2,69 @@
   <div class="text-center">
     <h1 class="mt-5 half-underline">About us</h1>
   </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 text-justify pt-3">
+      <p class="text-secondary" style="line-height: 2">
+        GRS - Safe, reliable and efficient environmentally friendly concern
+        helps you to reduce your operating expenses and helping to preserve the
+        potential of green resources.  GRS do services to measure, prevent,
+        limit and minimize environmental damage to water, air and soil, as well
+        as problems related to waste, noise and eco-systems. GRS deals with
+        solid &amp; liquid waste management processes and air pollution along
+        with safety compliance to ensure high productive in environmental
+        services. Developing and emerging markets in Asia are growing rapidly as
+        protection of the environment becomes a higher priority. Developing
+        countries with growing populations and fast-paced development need
+        environmental goods and services.
+      </p>
+    </div>
+  </div>
+
+  <!-- Our Team -->
+  <h2 class="h2 mb-4" style="font-weight: 500">
+    Our <span style="color: #149a39">Team</span>
+  </h2>
   <div class="row my-4 px-3">
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-      <div class="radius d-flex justify-content-center">
-        <img
-          src="https://via.placeholder.com/700/DDDDDD/000000/?text=Vijayakumar+CEO"
-          class="shadow"
-        />
+      <div title="Dhanam" class="radius d-flex justify-content-center">
+        <img src="../../../assets/Dhanam.jpg" class="shadow" />
       </div>
-      <h2 class="text-capitalize text-center my-2">
-        Vijayakumar Palanimuthu,<br />
-        <span class="text-center">CEO</span>
-      </h2>
     </div>
     <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-xs-12 my-auto">
-      <p class="Border Border-Left px-3">
-        Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <h3 class="text-capitalize Border Border-Left px-3 my-2">
+        Dhanam Palanimuthu<br />
+        <span class="mat-h3" style="font-weight: 300">PROPRIETRIX</span>
+      </h3>
+      <p class="text-secondary" style="text-align: justify">
+        A homemaker turned to social entrepreneur thought of finding solutions
+        for most of the environment challenges. She started "Green Resource
+        Solutions" to build a strong technical team for providing solutions to
+        analytical testing, Operation & Maintenance and technology providing
+        services.
       </p>
+    </div>
+    <hr />
+    <div class="col-sm-4 col-sm-push-8">
+      <div class="radius d-flex justify-content-center">
+        <img src="../../../assets/Vijayakumar.JPG" class="shadow" />
+      </div>
+    </div>
+    <div class="col-sm-8 col-sm-pull-4 my-auto">
+      <h3 class="text-capitalize Border Border-Left px-3 my-2">
+        Vijayakumar Palanimuthu<br />
+        <span class="mat-h3" style="font-weight: 300">CEO</span>
+      </h3>
+      <p
+        style="text-align: justify"
+        [ngClass]="{ limitTextHeight: isReadMore }"
+        class="mb-0"
+        [innerHTML]="text"
+      ></p>
+      <div class="d-flex justify-content-end">
+        <button mat-button type="button" (click)="isReadMore = !isReadMore">
+          {{ isReadMore ? "Read More" : "Read Less" }}
+        </button>
+      </div>
     </div>
   </div>
 </div>

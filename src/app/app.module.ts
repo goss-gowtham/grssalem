@@ -13,10 +13,11 @@ import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './core/home/home.component';
 import { AboutComponent } from './core/about/about.component';
-import { ContactComponent } from './core/contact/contact.component';
+import { ContactComponent, ContactForm } from './core/contact/contact.component';
 import { ServicesComponent } from './core/services/services.component';
 import { ErrorComponent } from './error/error.component';
 import { UnderdevComponent } from './underdev/underdev.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { UnderdevComponent } from './underdev/underdev.component';
     ContactComponent,
     ServicesComponent,
     ErrorComponent,
-    UnderdevComponent
+    UnderdevComponent,
+    ContactForm,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { UnderdevComponent } from './underdev/underdev.component';
     MatMenuModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,7 +25,7 @@ const routes: Routes = [{
   component: UnderdevComponent
 }, {
   path: '',
-  redirectTo: '/dev',
+  redirectTo: '/home',
   pathMatch: 'full',
 }, {
   path: '**',
