@@ -68,7 +68,7 @@
       </a>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto my-3">
-      <a routerLink="/services" class="horizontal-card">
+      <a class="horizontal-card">
         <div class="section_our_solution">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -89,8 +89,8 @@
                     <div class="solu_description">
                       <p>World class laboratories with water quality check</p>
                       <div class="d-flex justify-content-end align-items-end">
-                        <button type="button" class="read_more_btn">
-                          View more
+                        <button type="button" (click)="openDialog()" class="read_more_btn">
+                          Apply for Testing
                         </button>
                       </div>
                     </div>

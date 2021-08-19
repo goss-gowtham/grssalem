@@ -10,7 +10,7 @@
             <h5 class="card-title">{{contact?.title}}</h5>
             <p class="card-text">{{contact?.content}}</p>
             <div class="text-center">
-              <button mat-raised-button (click)="openDialog()">{{contact?.buttonName}}</button>
+              <button mat-raised-button (click)="openDialog(contact?.title)">{{contact?.buttonName}}</button>
             </div>
           </div>
         </div>

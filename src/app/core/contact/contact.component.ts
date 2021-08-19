@@ -28,15 +28,15 @@ export class ContactComponent implements OnInit {
     this.title = "jhg";
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ContactForm, {
+  openDialog(title) {
+    this.dialog.open(ContactForm, {
       width: 'auto',
       height: '90vh',
       minWidth: '50vw',
       maxHeight: '100vh',
       maxWidth: '100vw',
       data: {
-        title: this.title
+        title
       }
     });
   }
