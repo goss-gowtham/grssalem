@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
   openDialog() {
     this.dialog.open(ContactForm, {
       width: 'auto',
-      height: '90vh',
+      height: '100vh',
       minWidth: '50vw',
       maxHeight: '100vh',
       maxWidth: '100vw',
       data: {
-        title: 'JSW'
+        title: 'Apply for Testing'
       }
     });
   }
