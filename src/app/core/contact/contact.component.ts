@@ -36,7 +36,7 @@ export class ContactComponent implements OnInit {
       this.dialog.open(ContactForm, {
         width: 'auto',
         height: '100vh',
-        minWidth: '50vw',
+        minWidth: '70vw',
         maxHeight: '100vh',
         maxWidth: '100vw',
         data: {
@@ -57,6 +57,5 @@ export class ContactForm {
   constructor(@Inject(MAT_DIALOG_DATA) public data) { }
 
   ngOnInit() {
-    console.log(this.data);
   }
 }
