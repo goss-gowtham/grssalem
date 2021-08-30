@@ -18,7 +18,7 @@ import { ServicesComponent } from './core/services/services.component';
 import { ErrorComponent } from './error/error.component';
 import { UnderdevComponent } from './underdev/underdev.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -43,6 +43,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,46 +25,31 @@
     Our <span style="color: #149a39">Team</span>
   </h2>
   <div class="row my-4 px-3">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-      <div title="Dhanam" class="radius d-flex justify-content-center">
-        <img src="../../../assets/Dhanam.jpg" class="shadow" />
+    <ng-container *ngFor="let member of team">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="radius d-flex justify-content-center">
+          <img [src]="member.imgSrc" class="shadow" />
+        </div>
       </div>
-    </div>
-    <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-xs-12 my-auto">
-      <h3 class="text-capitalize mat-h1 Border Border-Left px-3 my-2">
-        Dhanam Palanimuthu<br />
-        <span class="mat-h3" style="font-weight: 300">PROPRIETRIX</span>
-      </h3>
-      <p class="text-secondary" style="text-align: justify">
-        A homemaker turned to social entrepreneur thought of finding solutions
-        for most of the environment challenges. She started "Green Resource
-        Solutions" to build a strong technical team for providing solutions to
-        analytical testing, Operation & Maintenance and technology providing
-        services.
-      </p>
-    </div>
-    <hr class="my-3"/>
-    <div class="col-sm-4 col-sm-push-8">
-      <div class="radius d-flex justify-content-center">
-        <img src="../../../assets/Vijayakumar.JPG" class="shadow" />
+      <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-xs-12 my-auto">
+        <h3 class="text-capitalize Border Border-Left px-3 my-2">
+          {{member.name}}<br />
+          <span class="mat-h3" style="font-weight: 300">{{member.desg}}</span>
+        </h3>
+        <p
+          style="text-align: justify"
+          [ngClass]="{ limitTextHeight: isReadMore && member.desg === 'CEO' }"
+          class="mb-0"
+        >{{member.desc}}</p>
+        <ng-container *ngIf="member.desg === 'CEO'">
+          <div class="d-flex justify-content-end">
+            <button mat-button type="button" (click)="isReadMore = !isReadMore">
+              {{ isReadMore ? "Read More" : "Read Less" }}
+            </button>
+          </div>
+        </ng-container>
       </div>
-    </div>
-    <div class="col-sm-8 col-sm-pull-4 my-auto">
-      <h3 class="text-capitalize Border Border-Left px-3 my-2">
-        Vijayakumar Palanimuthu<br />
-        <span class="mat-h3" style="font-weight: 300">CEO</span>
-      </h3>
-      <p
-        style="text-align: justify"
-        [ngClass]="{ limitTextHeight: isReadMore }"
-        class="mb-0"
-        [innerHTML]="text"
-      ></p>
-      <div class="d-flex justify-content-end">
-        <button mat-button type="button" (click)="isReadMore = !isReadMore">
-          {{ isReadMore ? "Read More" : "Read Less" }}
-        </button>
-      </div>
-    </div>
+      <hr class="my-3"/>
+    </ng-container>
   </div>
 </div>

@@ -1,1 +1,212 @@
-<p>services page under development!</p>
+<div class="container">
+  <div class="text-center">
+    <h1 class="mt-5 half-underline">Our Services</h1>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-md-12">
+      <mat-accordion>
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header
+            class="d-flex justify-content-between align-items-center"
+          >
+            <mat-panel-title>
+              Water, Waste Water &amp; Fuel – Laboratory Testing Services
+            </mat-panel-title>
+            <mat-icon class="mx-2">opacity</mat-icon>
+          </mat-expansion-panel-header>
+          <div class="text-justify">
+            <h2>Water Analysis</h2>
+            <h3 style="font-weight: 500" class="d-flex align-items-center">
+              <mat-icon class="mx-2">water_drop</mat-icon> Drinking Water
+              Analysis
+            </h3>
+            <p class="px-2">
+              <mat-accordion [togglePosition]="'before'">
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> Physical Parameters </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ol>
+                    <li>Color</li>
+                    <li>Odor</li>
+                    <li>pH value</li>
+                    <li>Taste</li>
+                    <li>Turbidity</li>
+                    <li>Total dissolved solids</li>
+                    <li>Total Suspended solids</li>
+                    <li>Conductivity</li>
+                  </ol>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> Chemical Parameters </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ol>
+                    <li>Aluminium (as Al)</li>
+                    <li>Ammonia (as total ammonia-N)</li>
+                    <li>Anionic detergents (as MBAS)</li>
+                    <li>Barium (as Ba)</li>
+                    <li>Boron (as B)</li>
+                    <li>Calcium (as Ca)</li>
+                    <li>Chloramine (as Cl<sub>6</sub>)</li>
+                    <li>Chloride (as Cl)</li>
+                    <li>Copper (as Cu)</li>
+                    <li>Fluoride (as F)</li>
+                    <li>Free residual chlorine</li>
+                    <li>Iron (as Fe)</li>
+                    <li>Magnesium (as Mg)</li>
+                    <li>Manganese (as Mn)</li>
+                    <li>Mineral oil</li>
+                    <li>Nitrate (as NO<sub>3</sub> )</li>
+                    <li>
+                      Phenolic compounds (as C<sub>6</sub>H<sub>5</sub>OH)
+                    </li>
+                    <li>Selenium (as Se)</li>
+                    <li>Silver (as Ag)</li>
+                    <li>Sulphate (as SO<sub>4</sub> )</li>
+                    <li>Sulphide (as H<sub>6</sub>S)</li>
+                    <li>Total alkalinity as calcium carbonate</li>
+                    <li>Total hardness (as CaCO<sub>3</sub> )</li>
+                    <li>Zinc (as Zn)</li>
+                  </ol>
+                </mat-expansion-panel>
+              </mat-accordion>
+              <mat-card class="mat-elevation-z0">
+                Toxic Substances (in near future)
+              </mat-card>
+              <mat-card class="mat-elevation-z0">
+                Radioactive Substances (in near future)</mat-card
+              >
+            </p>
+            <h3 style="font-weight: 500" class="d-flex align-items-center">
+              <mat-icon class="mx-2">water_drop</mat-icon> Waste Water Analysis
+            </h3>
+            <p class="px-2">
+              <mat-accordion [togglePosition]="'before'">
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> General Parameters </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ol>
+                    <li>pH</li>
+                    <li>TDS</li>
+                    <li>TSS</li>
+                    <li>BOD</li>
+                    <li>COD</li>
+                    <li>Dissolved Oxygen</li>
+                    <li>Density</li>
+                    <li>Acidity</li>
+                    <li>Alkalinity</li>
+                    <li>Total Hardness</li>
+                    <li>Conductivity</li>
+                    <li>Turbidity</li>
+                  </ol>
+                  <p class="mat-caption">
+                    If any specific parameter needed, please mention in contact
+                    form
+                  </p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </p>
+            <h2>Fuel Analysis</h2>
+            <h3 style="font-weight: 500" class="mb-0 d-flex align-items-center">
+              <mat-icon class="mx-2">water_drop</mat-icon> Proximate Analysis
+            </h3>
+            <p class="px-2">
+              <mat-card class="mat-elevation-z0">
+                <ul>
+                  <li>Moisture Content</li>
+                  <li>GCV</li>
+                  <li>Ash Content</li>
+                  <li>Fixed Carbon</li>
+                  <li>Volatile Matter</li>
+                </ul>
+              </mat-card>
+            </p>
+            <h3 style="font-weight: 500" class="mb-0 d-flex align-items-center">
+              <mat-icon class="mx-2">water_drop</mat-icon> Ultimate Analysis
+            </h3>
+            <p class="px-2">
+              <mat-card class="mat-elevation-z0">
+                <ul>
+                  <li>Carbon</li>
+                  <li>Hydrogen</li>
+                  <li>Nitrogen</li>
+                  <li>Oxygen</li>
+                  <li>Sulphur</li>
+                </ul>
+              </mat-card>
+            </p>
+          </div>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header
+            class="d-flex justify-content-between align-items-center"
+          >
+            <mat-panel-title>
+              Operation &amp; Maintenance Services
+            </mat-panel-title>
+            <mat-icon class="mx-2">tune</mat-icon>
+          </mat-expansion-panel-header>
+          <ol>
+            <li>
+              Cold &amp; Hot trial commissioning for any new
+              production/manufacturing plant
+            </li>
+            <li>
+              Formulating procedures and one point lesson as per standards for
+              respective O&amp;M department with safety precautions
+            </li>
+            <li>Provide budget proposal for plant O&amp;M activities</li>
+            <li>
+              Provide recruitment services to the plant O&amp;M activities
+            </li>
+            <li>Provide inventory management system</li>
+            <li>
+              Provide solutions to increase plant productivity and cost control
+              as per design specification
+            </li>
+          </ol>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header
+            class="d-flex justify-content-between align-items-center"
+          >
+            <mat-panel-title>
+              Mechanical Evaporator Technology Provider
+            </mat-panel-title>
+            <mat-icon class="mx-2">manage_accounts</mat-icon>
+          </mat-expansion-panel-header>
+          <ng-container *ngFor="let service of mechanicalServices">
+            <h3 style="font-weight: 500" class="mb-0 d-flex align-items-center">
+              <mat-icon class="mx-2">verified</mat-icon> {{service?.title}}
+            </h3>
+            <p class="px-2">
+              <mat-card class="mat-elevation-z0">
+                <ul>
+                  <li *ngFor="let item of service?.list">{{item}}</li>
+                </ul>
+              </mat-card>
+            </p>
+          </ng-container>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+
+  <div class="row my-4 d-flex justify-content-center">
+    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6 col-xs-12">
+      <img class="my-3" src="../../../assets/svgs/undraw_science.svg" width="100%" height="250" />
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 m-auto">
+      <div class=" text-center my-2 mat-captions">
+        <p>Collect your sample and test with GRS now!</p>
+        <button mat-raised-button (click)="openDialog()">Apply for Testing</button>
+      </div>
+    </div>
+  </div>
+
+</div>
