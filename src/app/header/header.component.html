@@ -3,7 +3,10 @@
   <span class="logo" style="cursor: pointer" routerLink="/" disabled
     >Green Resource Solutions</span
   >
-  <div>
+  <div class="d-none d-lg-flex">
+    <ng-container *ngTemplateOutlet="pages"></ng-container>
+  </div>
+  <div class="d-block d-lg-none">
     <button
       mat-icon-button
       [matMenuTriggerFor]="menu"
@@ -14,22 +17,26 @@
       >
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/">
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
-      </button>
-      <button mat-menu-item routerLink="/about">
-        <mat-icon>feed</mat-icon>
-        <span>About</span>
-      </button>
-      <button mat-menu-item routerLink="/services">
-        <mat-icon>water_drop</mat-icon>
-        <span>Services</span>
-      </button>
-      <button mat-menu-item routerLink="/contact">
-        <mat-icon>send</mat-icon>
-        <span>Contact</span>
-      </button>
+      <ng-container *ngTemplateOutlet="pages"></ng-container>
     </mat-menu>
   </div>
 </mat-toolbar>
+
+<ng-template #pages>
+  <button class="lg-button" mat-menu-item routerLink="/">
+    <mat-icon class="d-lg-none">home</mat-icon>
+    <span>Home</span>
+  </button>
+  <button class="lg-button" mat-menu-item routerLink="/about">
+    <mat-icon class="d-lg-none">feed</mat-icon>
+    <span>About</span>
+  </button>
+  <button class="lg-button" mat-menu-item routerLink="/services">
+    <mat-icon class="d-lg-none">water_drop</mat-icon>
+    <span>Services</span>
+  </button>
+  <button class="lg-button" mat-menu-item routerLink="/contact">
+    <mat-icon class="d-lg-none">send</mat-icon>
+    <span>Contact</span>
+  </button>
+</ng-template>

@@ -19,6 +19,7 @@ import { ErrorComponent } from './error/error.component';
 import { UnderdevComponent } from './underdev/underdev.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule} from '@angular/material/expansion';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MatExpansionModule} from '@angular/material/expansion';
     MatCardModule,
     MatDialogModule,
     MatExpansionModule,
+    NgxGalleryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

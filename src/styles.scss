@@ -29,7 +29,11 @@ $grssalem-theme: mat-light-theme($grssalem-primary, $grssalem-accent, $grssalem-
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; // your theme
 
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+    transform: none !important;
+}
 html, body { height: 100%; }
 body { margin: 0;
   font-family: "Lato", sans-serif; }

@@ -26,3 +26,9 @@
 .Border-bottom:after {
   bottom: 0;
 }
+
+@media screen and (min-width: 770px){
+  .lg-button {
+    width:100px
+  }
+}

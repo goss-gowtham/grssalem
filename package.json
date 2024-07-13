@@ -22,7 +22,10 @@
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
     "bootstrap": "^5.0.2",
+    "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
     "ng-gallery": "^9.0.1",
+    "ngx-gallery-9": "^1.0.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

@@ -254,3 +254,11 @@ p {
   color: #434547!important;
   font-size: 16px !important;
 }
+
+.slider {
+  display: flex;
+  justify-content: center;
+  img {
+    border-radius: 50px !important;
+  }
+}
