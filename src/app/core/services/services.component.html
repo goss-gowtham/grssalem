@@ -11,133 +11,82 @@
             class="d-flex justify-content-between align-items-center"
           >
             <mat-panel-title>
-              Water, Waste Water &amp; Fuel – Laboratory Testing Services
+              Laboratory Services
             </mat-panel-title>
             <mat-icon class="mx-2">opacity</mat-icon>
           </mat-expansion-panel-header>
           <div class="text-justify">
-            <h2>Water Analysis</h2>
             <h3 style="font-weight: 500" class="d-flex align-items-center">
-              <mat-icon class="mx-2">water_drop</mat-icon> Drinking Water
-              Analysis
-            </h3>
-            <p class="px-2">
-              <mat-accordion [togglePosition]="'before'">
-                <mat-expansion-panel class="mat-elevation-z0">
+              <mat-accordion [togglePosition]="'after'" class="acc-width">
+                <mat-expansion-panel  [expanded]="true" class="mat-elevation-z0">
                   <mat-expansion-panel-header>
-                    <mat-panel-title> Physical Parameters </mat-panel-title>
+                    <mat-panel-title> <mat-icon class="mx-2">airwave</mat-icon> Atmospheric
+                      pollution</mat-panel-title>
                   </mat-expansion-panel-header>
-                  <ol>
-                    <li>Color</li>
-                    <li>Odor</li>
-                    <li>pH value</li>
-                    <li>Taste</li>
-                    <li>Turbidity</li>
-                    <li>Total dissolved solids</li>
-                    <li>Total Suspended solids</li>
-                    <li>Conductivity</li>
-                  </ol>
+                  <ul>
+                    <li>Air Sample</li>
+                    <li>Stack Emission</li>
+                    <li>Ambient Noise Level</li>
+                    <li>Work Environment Indoor Air</li>
+                  </ul>
                 </mat-expansion-panel>
                 <mat-expansion-panel class="mat-elevation-z0">
                   <mat-expansion-panel-header>
-                    <mat-panel-title> Chemical Parameters </mat-panel-title>
+                    <mat-panel-title> <mat-icon class="mx-2">water_drop</mat-icon> Water & Waste Water</mat-panel-title>
                   </mat-expansion-panel-header>
-                  <ol>
-                    <li>Aluminium (as Al)</li>
-                    <li>Ammonia (as total ammonia-N)</li>
-                    <li>Anionic detergents (as MBAS)</li>
-                    <li>Barium (as Ba)</li>
-                    <li>Boron (as B)</li>
-                    <li>Calcium (as Ca)</li>
-                    <li>Chloramine (as Cl<sub>6</sub>)</li>
-                    <li>Chloride (as Cl)</li>
-                    <li>Copper (as Cu)</li>
-                    <li>Fluoride (as F)</li>
-                    <li>Free residual chlorine</li>
-                    <li>Iron (as Fe)</li>
-                    <li>Magnesium (as Mg)</li>
-                    <li>Manganese (as Mn)</li>
-                    <li>Mineral oil</li>
-                    <li>Nitrate (as NO<sub>3</sub> )</li>
-                    <li>
-                      Phenolic compounds (as C<sub>6</sub>H<sub>5</sub>OH)
-                    </li>
-                    <li>Selenium (as Se)</li>
-                    <li>Silver (as Ag)</li>
-                    <li>Sulphate (as SO<sub>4</sub> )</li>
-                    <li>Sulphide (as H<sub>6</sub>S)</li>
-                    <li>Total alkalinity as calcium carbonate</li>
-                    <li>Total hardness (as CaCO<sub>3</sub> )</li>
-                    <li>Zinc (as Zn)</li>
-                  </ol>
+                  <ul>
+                    <li>Drinking Water</li>
+                    <li>Construction</li>
+                    <li>Water</li>
+                    <li>Surface Water</li>
+                    <li>Ground Water</li>
+                    <li>Waste/ Sewage</li>
+                    <li>Water</li>
+                    <li>Swimming Pool</li>
+                    <li>Water</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">grass</mat-icon> Soil</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Soil / Sediments</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">gas_meter</mat-icon> Fuel</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Proximate</li>
+                    <li>Ultimate</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">restaurant</mat-icon> Food</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Nutrition Labelling</li>
+                    <li>Dairy Products & Analogues (Milk and Milk products)</li>
+                    <li>Fats, Oils and Fat Emulsions</li>
+                    <li>Fruits Vegetables products</li>
+                    <li>Nut and Nut products</li>
+                    <li>Cereals and Cereal based products</li>
+                    <li>Bakery & Confectionary</li>
+                    <li>Sugar and Sugar products including Honey</li>
+                    <li>Herbs, Spices and Condiments products</li>
+                    <li>Snacks, Namkeen and Ready-to-eat products</li>
+                    <li>Proprietary foods</li>
+                    <li>Beverages (Tea & Coffee)</li>
+                    <li>Starch & Starch Products</li>
+                    <li>Animal feeds</li>
+                    <li>Poultry and poultry products</li>
+                  </ul>
                 </mat-expansion-panel>
               </mat-accordion>
-              <mat-card class="mat-elevation-z0">
-                Toxic Substances (in near future)
-              </mat-card>
-              <mat-card class="mat-elevation-z0">
-                Radioactive Substances (in near future)</mat-card
-              >
-            </p>
-            <h3 style="font-weight: 500" class="d-flex align-items-center">
-              <mat-icon class="mx-2">water_drop</mat-icon> Waste Water Analysis
             </h3>
-            <p class="px-2">
-              <mat-accordion [togglePosition]="'before'">
-                <mat-expansion-panel class="mat-elevation-z0">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title> General Parameters </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <ol>
-                    <li>pH</li>
-                    <li>TDS</li>
-                    <li>TSS</li>
-                    <li>BOD</li>
-                    <li>COD</li>
-                    <li>Dissolved Oxygen</li>
-                    <li>Density</li>
-                    <li>Acidity</li>
-                    <li>Alkalinity</li>
-                    <li>Total Hardness</li>
-                    <li>Conductivity</li>
-                    <li>Turbidity</li>
-                  </ol>
-                  <p class="mat-caption">
-                    If any specific parameter needed, please mention in contact
-                    form
-                  </p>
-                </mat-expansion-panel>
-              </mat-accordion>
-            </p>
-            <h2>Fuel Analysis</h2>
-            <h3 style="font-weight: 500" class="mb-0 d-flex align-items-center">
-              <mat-icon class="mx-2">water_drop</mat-icon> Proximate Analysis
-            </h3>
-            <p class="px-2">
-              <mat-card class="mat-elevation-z0">
-                <ul>
-                  <li>Moisture Content</li>
-                  <li>GCV</li>
-                  <li>Ash Content</li>
-                  <li>Fixed Carbon</li>
-                  <li>Volatile Matter</li>
-                </ul>
-              </mat-card>
-            </p>
-            <h3 style="font-weight: 500" class="mb-0 d-flex align-items-center">
-              <mat-icon class="mx-2">water_drop</mat-icon> Ultimate Analysis
-            </h3>
-            <p class="px-2">
-              <mat-card class="mat-elevation-z0">
-                <ul>
-                  <li>Carbon</li>
-                  <li>Hydrogen</li>
-                  <li>Nitrogen</li>
-                  <li>Oxygen</li>
-                  <li>Sulphur</li>
-                </ul>
-              </mat-card>
-            </p>
           </div>
         </mat-expansion-panel>
 
@@ -146,29 +95,87 @@
             class="d-flex justify-content-between align-items-center"
           >
             <mat-panel-title>
-              Operation &amp; Maintenance Services
+              Product / Turnkey Services
             </mat-panel-title>
             <mat-icon class="mx-2">tune</mat-icon>
           </mat-expansion-panel-header>
-          <ol>
-            <li>
-              Cold &amp; Hot trial commissioning for any new
-              production/manufacturing plant
-            </li>
-            <li>
-              Formulating procedures and one point lesson as per standards for
-              respective O&amp;M department with safety precautions
-            </li>
-            <li>Provide budget proposal for plant O&amp;M activities</li>
-            <li>
-              Provide recruitment services to the plant O&amp;M activities
-            </li>
-            <li>Provide inventory management system</li>
-            <li>
-              Provide solutions to increase plant productivity and cost control
-              as per design specification
-            </li>
-          </ol>
+          <div class="text-justify">
+            <h3 style="font-weight: 500" class="d-flex align-items-center">
+              <mat-accordion [togglePosition]="'after'" class="acc-width">
+                <mat-expansion-panel  [expanded]="true" class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">water_drop</mat-icon> Water Treatment plant</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Pressure sand Filters
+                    <li>Activated carbon filter</li>
+                    <li>Dual media Filter</li>
+                    <li>Multi Grade Filters</li>
+                    <li>Iron Removal Filters</li>
+                    <li>Water Softeners</li>
+                    <li>Reverse Osmosis Plant</li>
+                    <li>Demineralization Plant</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">water_ec</mat-icon>Sewage Treatment Plant</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Activated Sludge Process</li>
+                    <li>Moving Bed Bio Reactor</li>
+                    <li>Sequential Batch Reactor</li>
+                    <li>Bio filters</li>
+                    <li>Membrane Bio Reactor</li>
+                    <li>Biozone ( Ozone based Treatment)</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">water_drop</mat-icon>Effluent Treatment Plant (ETP)</mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Chemical Treatment</li>
+                    <li>Anaerobic Treatment</li>
+                    <li>Biological Treatment</li>
+                    <li>Tertiary Treatment</li>
+                    <li>Membrane Bio Reactor</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">engineering</mat-icon> Operation and Maintenance Services </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Man Power Supply</li>
+                    <li>Technical Consultancy Services</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">manufacturing</mat-icon> Mechanical Evaporator </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Falling Film Evaporator</li>
+                    <li>Forced Circulation Evaporator</li>
+                    <li>Natural Circulation Evaporator</li>
+                    <li>Hybrid Evaporator</li>
+                    <li>Agitated Thin Film Dryer / Evaporator</li>
+                  </ul>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="mat-elevation-z0">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title> <mat-icon class="mx-2">change_circle</mat-icon> Waste Management Services </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <ul>
+                    <li>Composting</li>
+                    <li>Waste to Energy Plants (W2E)</li>
+                    <li>Biomethanation</li>
+                  </ul>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </h3>
+          </div>
         </mat-expansion-panel>
       </mat-accordion>
     </div>
