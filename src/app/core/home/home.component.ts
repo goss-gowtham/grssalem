@@ -11,7 +11,7 @@ import { NgxGalleryAnimation } from 'ngx-gallery-9';
 export class HomeComponent implements OnInit {
   galleryOptions;
   galleryImages;
-  images = ['assets/home-slide/Soil (2).jpg', 'assets/home-slide/Food.jpg', 'assets/home-slide/Food2.jpg', 'assets/home-slide/UV.jpg', 'assets/home-slide/Soil (3).jpg', 'assets/home-slide/soil.jpg', 'assets/home-slide/water.jpg', 'assets/home-slide/Water (2).jpg', 'assets/home-slide/Air.jpg', 'assets/home-slide/Water.webp']
+  images = ['assets/home-slide/Soil (2).jpg', 'assets/home-slide/Food.jpg', 'assets/home-slide/Food2.jpg', 'assets/home-slide/UV.jpg', 'assets/home-slide/Soil (3).jpg', 'assets/home-slide/soil.jpg', 'assets/home-slide/water.jpg', 'assets/home-slide/Water (2).jpg', 'assets/home-slide/Air.jpg', 'assets/home-slide/WaterDa.jpg']
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
